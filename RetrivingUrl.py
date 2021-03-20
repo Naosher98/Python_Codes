@@ -26,12 +26,13 @@ while True:
     tags = soup('a')
     i=0
     for tag in tags:
+        i=i+1
         x=tag.get('href', None)
     #     print(x)
         if i == position:
             url=x
 #             print(url)
-        i=i+1
+        
     if j == count:
         break
 print(url)
