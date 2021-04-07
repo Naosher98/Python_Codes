@@ -23,8 +23,8 @@ uh = urllib.request.urlopen(url, context=ctx)
 data = uh.read()
 print('Retrieved', len(data), 'characters')
 info = json.loads(data)
-print('Count:', len(info))
 x=info['comments']
+print('Count:', len(x))
 sum=0
 for i in x:
     sum=int(i['count'])+sum
